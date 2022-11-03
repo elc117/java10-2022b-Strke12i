@@ -12,7 +12,8 @@ public void addMark(char c) {
 ```
 No momento em que a Thread que está atribuida em Runner é iniciada, o processo de acesso a Thread acaba por executar a função de adicionar o caracter especifico de forma concorrente. Devido a função addMark não estar sendo utilizada de forma sincronizada, mesmo que seja percorrido as 20 vezes para cada caracter, esse acaba por não ser inserido de forma correta, demonstrando o erro de Race Condition.
 
---imagem aqui
+![Captura](cap_tela.png)
 
 
+O Conceito descrito fica claro na imagem acima, já que não ocorre o total de 20 inserções em cada letra, como também o array fica com espaços livres que printados como o caracter "-".
 
